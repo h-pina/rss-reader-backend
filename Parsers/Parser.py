@@ -4,5 +4,5 @@ class Parser:
         self.articlesList = []
         pass
         
-    def parse(self):
+    def parse(self, feed):
         pass

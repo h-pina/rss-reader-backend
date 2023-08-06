@@ -1,3 +1,4 @@
+feedMock = '''
 <rss version="2.0">
 	<channel>
 		<title>Hacker News</title>
@@ -23,3 +24,5 @@
 		</item>
 	</channel>
 </rss>
+'''
+

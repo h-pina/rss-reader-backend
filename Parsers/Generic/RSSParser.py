@@ -25,4 +25,5 @@ class RSSParser(Parser):
                 'link':item.link.text,
                 'date': pubDate.strftime("%d-%m-%Y")
             })
+        self.articlesList = results
         return results

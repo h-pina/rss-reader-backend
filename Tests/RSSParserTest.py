@@ -18,7 +18,7 @@ class RSSParserTest(unittest.TestCase):
         with self.assertRaises(Exception):
             parser.getFeedFromUrl(badUrl)
 
-    def test_parse_data_from_feed(self): 
+    def test_parse(self): 
         parserMock = Mock()
         parserMock.getFeedFromUrl.return_value = feedMock 
         feed = parserMock.getFeedFromUrl()
@@ -35,12 +35,6 @@ class RSSParserTest(unittest.TestCase):
         }]        
         self.assertListEqual(result,expectedResult)
 
-    def test_save_parsed_data_to_db(self):
-        #Needs database interface first
-        pass
-
-    def test_full_parsing(self):
-        pass
 
 if __name__ == '__main__':
     unittest.main()
